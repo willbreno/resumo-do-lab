@@ -69,3 +69,58 @@ Para verificar status de indisponibilidade fora do portal azure pode ser verific
  
 
 https://azure.status.microsoft/pt-br/status 
+
+# Tipos de Serviços em servidores cloud. 
+
+IaaS – Infraestrutura como serviço.  
+
+Recursos onde o cliente tende a ter mais contato com o serviço por exemplo configuração de uma máquina virtual na plataforma azure, onde as responsabilidades de configuração e manutenção(atualização e segurança) e de responsabilidade do contratante.   
+
+Características do IaaS: 
+
+Escalabilidade: As empresas podem ajustar a quantidade de recursos utilizados (como poder de computação e armazenamento) de acordo com suas necessidades. 
+Pagamento sob demanda: As organizações pagam apenas pelos recursos que consomem, o que reduz os custos iniciais. 
+Responsabilidade do usuário: O provedor cuida da infraestrutura, mas a configuração e manutenção de sistemas operacionais, aplicativos e dados ficam sob responsabilidade do usuário. 
+
+Desafios: 
+
+Gerenciamento de recursos: Os usuários precisam gerenciar e configurar seus próprios ambientes. 
+Segurança: Embora os provedores cuidem da infraestrutura, a segurança dos dados e das aplicações é responsabilidade do cliente. 
+IaaS é ideal para empresas que precisam de controle sobre seus ambientes de TI sem lidar com os custos e a manutenção de uma infraestrutura física própria. 
+
+ 
+
+PaaS – Plataforma como serviço. 
+
+Na Plataforma como Serviço (PaaS), o cliente não precisa se preocupar com a configuração ou gerenciamento da infraestrutura subjacente, como servidores, armazenamento ou recursos de rede. Por exemplo, ao configurar um banco de dados em nuvem, o usuário não precisa lidar com a configuração do hardware ou do sistema operacional. O foco está em desenvolver, gerenciar e implantar aplicativos. A plataforma já oferece o ambiente necessário para isso, permitindo que os desenvolvedores concentrem-se na lógica da aplicação e na sua funcionalidade. 
+
+Características do PaaS: 
+
+Ambiente de desenvolvimento completo: O PaaS oferece ferramentas para o desenvolvimento, teste, e implantação de aplicações, como servidores web, bancos de dados e ambientes de integração contínua (CI/CD). 
+Abstração da infraestrutura: O provedor de PaaS gerencia a infraestrutura (servidores, redes, armazenamento), enquanto o usuário se concentra apenas no desenvolvimento e na configuração da aplicação. 
+Escalabilidade: A plataforma pode ser facilmente escalada conforme a demanda da aplicação aumenta. 
+
+Desafios: 
+
+Menor controle sobre a infraestrutura: Por abstrair a infraestrutura, o usuário tem menos flexibilidade para customizar configurações avançadas. 
+Dependência do provedor: As empresas ficam dependentes do provedor de PaaS para atualizações e gerenciamento de infraestrutura, o que pode representar um risco em casos de interrupção do serviço. 
+
+
+SaaS – Software como serviço.  
+
+No modelo SaaS, tanto a infraestrutura (hardware) quanto o software (aplicação) já estão completamente configurados e gerenciados pelo provedor. O usuário final só precisa acessar e utilizar o serviço, sem se preocupar com a instalação ou manutenção de servidores ou sistemas. O acesso ao software é baseado em licenças, que podem variar de acordo com as funcionalidades e os níveis de segurança oferecidos. Um exemplo de SaaS é o Microsoft 365, onde os recursos disponíveis para o usuário variam conforme o tipo de licença adquirida e as políticas de segurança definidas. 
+
+Características do SaaS: 
+
+Acesso via internet: Os usuários podem acessar o software de qualquer lugar com conexão à internet, através de um navegador. 
+Gerenciamento centralizado: O provedor de SaaS cuida de toda a infraestrutura, atualizações, segurança e backups. 
+Licenciamento baseado em assinatura: Os usuários pagam pelo acesso ao software com base em um modelo de assinatura, que pode variar conforme o nível de serviço e funcionalidades. 
+Nenhuma instalação local necessária: Não há necessidade de instalar o software nos computadores locais, o que facilita o uso e reduz a necessidade de suporte técnico. 
+
+Desafios do SaaS: 
+
+Dependência da internet: O desempenho do software depende de uma conexão estável e de alta velocidade à internet. 
+Segurança de dados: Como os dados ficam armazenados na nuvem do provedor, a segurança e privacidade dependem da infraestrutura do provedor, o que pode gerar preocupações para algumas empresas. 
+Personalização limitada: As opções de customização podem ser limitadas em comparação com softwares instalados localmente. 
+
+ 
