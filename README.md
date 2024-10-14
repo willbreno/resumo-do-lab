@@ -11,30 +11,15 @@ Além disso, recebemos informações sobre o SLA (Service Level Agreement) dos s
 
 1 – Alta disponibilidade ( sistema com acesso 24 por 7 com SLA para correção de erros, com prevenção de desastres )  
 
- 
-
 SLA 99% de disponibilidade, tem limite para indisponibilidade de 7.2 por mês e  1.68 horas por semana e 3.65 dias por ano caso esse tempo seja ultrapassado será gerado créditos na conta azure com forma de ressarcimento.  
-
- 
-
 SLA 99.9%  tem tolerância para ficar com sistemas foras de 10,1 minutos por semana, 43,2 minutos por mês e 8.76 horas por ano.  
-
- 
-
 SLA 99,95 tem tolerância para ficar com sistema fora de 5 minutos por semana, 21,6 minutos por mês e 4,38 horas por ano.  
-
- 
-
 SLA 99,99 tem tolerância para ficar com sistema fora de 1,01 minutos por semana, 4,32  minutos por mês e 52,56 horas por ano.  
-
- 
-
 SLA 99,999 tem tolerância para ficar com sistema fora de 6 segundos por semana, 25,9 segundos por mês e 5,26 minutos  por ano.  
 
  
 
 2  - Escalabilidade ( é a capacidade de  ajustar recursos para atender à demanda)  
-
 A capacidade de escalar induz a possibilidade de aumento de recursos de acordo com a demanda seja para um projeto ou para picos de acesso, assim facilitando o controle de gastos pois uma vez que o serviço for contratado, caso o hardware adicional não fizer mais sentido pode ser devolvido para a Microsoft. 
 
  
@@ -124,3 +109,61 @@ Segurança de dados: Como os dados ficam armazenados na nuvem do provedor, a seg
 Personalização limitada: As opções de customização podem ser limitadas em comparação com softwares instalados localmente. 
 
  
+# Componentes de Arquiteturas Azure.
+
+Regiões:  
+Atualmente o azure está presente em 60 regiões cobrindo 140 países, tornando um serviço global.  
+Uma região e a ligação de 3 data center, onde possuem ligações da própria Microsoft chamados de Back bone(comunicação de baixa latência, da própria Microsoft) para compartilhamento de informações.  
+Nem todos os recursos estão disponível para todas as regiões.  
+
+Regiões de Disponibilidade:
+Cada região do Azure é subdividida em várias Zonas de Disponibilidade (Availability Zones), que consistem em um ou mais data centers equipados com alimentação, rede e refrigeração independentes. Essas zonas são criadas para proteger os aplicativos e os dados contra falhas no nível do data center. 
+
+Benefícios de escolher a região correta: 
+Menor latência: Hospedar suas aplicações e dados em uma região próxima dos seus clientes ou usuários finais ajuda a melhorar o desempenho. 
+Cumprimento de requisitos de conformidade: Escolher uma região que atenda às regulamentações locais, como o GDPR na Europa, é fundamental para algumas empresas. 
+Recuperação de desastres: Ter uma estratégia de backup em regiões geograficamente distribuídas pode ajudar a garantir a continuidade dos negócios em caso de falhas em data centers. 
+ 
+Como escolher a Região do Azure: 
+Proximidade: Escolha uma região próxima ao seu público-alvo para garantir baixa latência. 
+Serviços disponíveis: Algumas regiões podem não oferecer todos os serviços, por isso é importante verificar se a região escolhida oferece os recursos que você precisa. 
+Preços: Os custos dos serviços do Azure podem variar entre regiões, então considerar o orçamento é importante. 
+Resiliência e compliance: Dependendo dos requisitos de negócios e regulamentações, pode ser necessário escolher uma região específica para manter a conformidade ou garantir a recuperação de desastres. 
+
+Regiões Pares (Azure Region Pairs): 
+As Regiões Pares são um recurso do Azure projetado para aumentar a resiliência e a disponibilidade dos serviços. Cada região do Azure é emparelhada com outra dentro da mesma geografia (por exemplo, East US é emparelhada com West US). Isso significa que, em caso de falha ou indisponibilidade em uma região, a sua região par pode assumir o processamento e os dados, mitigando o impacto de eventuais interrupções.  
+
+Além disso, as regiões pares garantem: 
+Replicação automática dos dados entre regiões em cenários de recuperação de desastres. 
+Manutenção coordenada, onde atualizações de infraestrutura são feitas de forma a evitar que ambas as regiões sejam afetadas simultaneamente. 
+Distância geográfica suficiente entre as regiões para reduzir a probabilidade de desastres naturais impactarem ambas ao mesmo tempo, mas ainda assim garantindo proximidade suficiente para oferecer replicação eficiente. 
+Essa estratégia de emparelhamento entre regiões ajuda a garantir alta disponibilidade e continuidade dos serviços, essencial para empresas que dependem de uma infraestrutura sempre ativa.
+
+Regiões Soberanas do Azure: 
+As Regiões Soberanas do Azure são regiões especiais onde o acesso e a disponibilidade dos recursos são restritos a um conjunto limitado de organizações ou indivíduos, geralmente por razões de segurança ou requisitos regulatórios específicos. Nesses locais, os dados e serviços são isolados do restante da infraestrutura global do Azure, garantindo que os dados permaneçam dentro de jurisdições e sob regras de governança específicas. 
+Essas regiões têm um controle muito mais rigoroso sobre o acesso aos servidores e à infraestrutura. Um exemplo de uma Região Soberana é a Região Governamental dos Estados Unidos ("Azure Government"), que é dedicada a agências governamentais e militares dos EUA. Ela é projetada para atender às exigências legais e regulatórias de segurança, sendo acessível apenas por entidades que atendam aos critérios específicos. 
+
+Em resumo, as Regiões Soberanas oferecem: 
+Isolamento total de dados, garantindo que eles não sejam armazenados ou processados fora das fronteiras especificadas. 
+Conformidade com regulamentos rigorosos de segurança e privacidade. 
+Acesso controlado e restrito a um público-alvo definido, como entidades governamentais ou militares. 
+Essas regiões são essenciais para organizações que lidam com dados sensíveis ou que estão sujeitas a normas regulatórias estritas, como é o caso do setor militar ou governamental. 
+Temos também a região soberana da China seguindo os mesmo critérios e sendo operado pela uma empresa separada da Microsoft chama 21VIANET 
+
+Grupos de Recursos (Azure Resource Groups): 
+Organização de recursos: Os grupos de recursos são utilizados para organizar e gerenciar os recursos do Azure (como VMs, redes, bancos de dados) de forma lógica, facilitando o gerenciamento, controle e aplicação de políticas. 
+Imutabilidade do nome: Uma vez criado, o nome de um grupo de recursos não pode ser alterado. Se houver necessidade de um novo nome, é necessário criar um novo grupo de recursos e mover os recursos para ele. 
+Movimentação de recursos: É possível mover recursos de um grupo para outro, seja dentro da mesma assinatura ou entre assinaturas diferentes, sem perder a integridade dos dados ou configuração. 
+Aplicação de regras e políticas: É possível aplicar políticas e tags nos grupos de recursos para gerenciar a governança, segurança, e conformidade de forma centralizada. 
+Existência de recursos: Um recurso só pode pertencer a um único grupo de recursos por vez, mas ele pode ser movido para outro grupo de recursos quando necessário. 
+Recursos em regiões diferentes: Embora os recursos estejam vinculados a um grupo de recursos, os próprios recursos podem estar em diferentes regiões. Ou seja, um grupo de recursos pode conter ativos de várias regiões do Azure. 
+
+ Assinaturas do Azure: 
+É possível ter mais de uma assinatura por conta no Azure. Isso é útil, por exemplo, para dividir e organizar os serviços e recursos de maneira eficiente. Um cenário comum é ter uma assinatura para Homologação (testes), outra para Produção e, se necessário, até outras assinaturas para diferentes ambientes ou projetos. Isso facilita o gerenciamento, pois separa os recursos e permite uma administração mais clara de cada ambiente. 
+As contas de faturamento e os gastos também podem ser divididos por assinatura, o que proporciona um controle financeiro mais preciso, permitindo que os custos sejam segregados por setores ou projetos, evitando confusões na alocação de recursos. 
+Isso também nos permite segregar também a questões de acesso aos sistemas, por exemplo uma determinada pessoa só pode ter acesso ao recurso de homologação e não pode ter acesso ao de produção.  
+É importante notar que uma assinatura não pode ser vinculada a mais de uma conta. Cada assinatura está associada a uma única conta, o que ajuda a manter uma gestão centralizada e segura dos recursos. 
+OBS: um grupo de gerenciamento pode aplicar suas configurações para várias assinaturas.  
+
+Dados data center Microsoft:  
+https://datacenters.microsoft.com/globe/explore?info=region_brazilsouth 
