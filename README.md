@@ -167,3 +167,39 @@ OBS: um grupo de gerenciamento pode aplicar suas configurações para várias as
 
 Dados data center Microsoft:  
 https://datacenters.microsoft.com/globe/explore?info=region_brazilsouth 
+
+#Computação e Redes 
+
+Conjuntos de Disponibilidade de VMs: 
+No Azure, é possível criar políticas de disponibilidade para ambientes, permitindo configurar nossas estruturas em diferentes racks, o que garante alta disponibilidade. 
+
+Domínio de Falha 
+O domínio de falha refere-se ao rack que abriga os servidores físicos. É ideal que sejam configurados pelo menos três domínios de falha para garantir que, se um rack falhar, os serviços ainda permaneçam disponíveis em outros racks. 
+
+Domínio de Atualização 
+O domínio de atualização diz respeito à forma como as atualizações são aplicadas aos servidores. O Azure garante que as atualizações sejam distribuídas entre os diferentes domínios de atualização, evitando que todos os servidores sejam atualizados simultaneamente. Isso minimiza o risco de interrupções nos serviços durante o processo de atualização. 
+
+Área de trabalho virtual do Azure:  
+No azure e possível criar ambiente de trabalho remoto para colaboradores, assim ao invés de custo com aquisição de equipamentos físicos, e gasto com envio e tempo de espera até que a mercadoria chegue ao colaborador com área de trabalho virtual e possível realizar de forma rápida, além de reduzir risco de recursos deixados para trás ( equipamentos que não são devolvido com o desligamento do colaborador:   
+
+Contêineres do Azure: 
+Os contêineres do Azure oferecem um ambiente leve e virtualizado que elimina a necessidade de gerenciamento do sistema operacional, permitindo uma resposta rápida a alterações sob demanda. Essa abordagem facilita a implementação de aplicativos de forma ágil e escalável. 
+Um exemplo popular dessa tecnologia é o Docker, que permite a criação, o gerenciamento e a implementação de contêineres. O Azure integra-se bem ao Docker, possibilitando o uso de serviços como o Azure Container Instances e o Azure Kubernetes Service, que oferecem orquestração e gerenciamento de contêineres em larga escala. 
+Além disso, os contêineres garantem consistência entre ambientes de desenvolvimento e produção, reduzindo problemas de compatibilidade e melhorando a eficiência do ciclo de vida do desenvolvimento de software. 
+Azure Functions e Serviços de aplicação do Azure:  
+Azure Functions é uma oferta de serviço PaaS que dá suporte a operações de computação sem servidor.  
+Executa ações dependendo das especificações configuradas para elas serem iniciadas.  
+
+Serviços de aplicativo do Azure:  
+Plataforma totalmente gerenciada para a criação, implementação e dimensionamento de APIs ou aplicativos WEB, esta oferta de serviço consiste em uma plataforma PaaS.  
+Aceitando as seguintes linguagens:  
+.NET, .NET CORE, Node.js, Java, Python PHP.  
+
+Serviços de rede do Azure: 
+A rede virtual do Azure(VNet) permite que os recursos do Azure se comuniquem uns com os outros, com a internet e redes locais. 
+Pontos de extremidades públicos: acessíveis de  qualquer lugar na internet.  
+Pontos de extremidades privados: acessíveis somente de dentro da sua rede.  
+As sub-redes virtuais segmentam sua rede para atender ás suas necessidades. 
+Gateway de VPN é usado para encaminhar trafego criptografado entre a rede Azure e a rede publica  
+ExpressRoute estende as redes locais para rede Azure por meio de uma configuração direta  
+DNS do Azure utiliza uma rede global de servidores de nome. 
