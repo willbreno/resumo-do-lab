@@ -203,3 +203,62 @@ As sub-redes virtuais segmentam sua rede para atender ás suas necessidades.
 Gateway de VPN é usado para encaminhar trafego criptografado entre a rede Azure e a rede publica  
 ExpressRoute estende as redes locais para rede Azure por meio de uma configuração direta  
 DNS do Azure utiliza uma rede global de servidores de nome. 
+
+# Armazenamento 
+
+Contas de armazenamento:  
+Deve ter um nome globalmente exclusivo.  
+Disponibilizar acesso à internet em todo mundo.  
+Deve se definir um serviço de armazenamento e opções de redundancia.  
+
+Redundância de Armazenamento:  
+LRS (armazenamento com redundância local) -> Datacenter individual na região primária durabilidade 11 noves  
+ZRS (armazenamento com redundância de zona) -> Três zonas de disponibilidade na região primária durabilidade 12 noves 
+GRS (armazenamento com redundância geografica) -> Datacenter único no primário e região secundaria durabilidade 16 noves 
+GZRS (armazenamento com redundância de zona geogrâfica) -> Três zonas de disponibilidade na região primária e um único datacenter na região secundaria durabilidade de 16 noves 
+
+Blob do Azure:  
+Otimizado  para armazenamento de  quantidades massivas de dados não estruturados, como texto ou dados binarios (arquivos como foto, videos, texto entre outros) 
+
+Disco de Azure:  
+Fornece discos para máquinas virtuais, aplicativos e outros serviços ( durante a implementação de um novo disco não é necessário a para dos sistemas)  
+
+Fila do Azure:  
+Serviço de dico utilizado para armazenamento de mensagens (podendo até armazenar arquivos de mensagem de 64 KB 
+
+Arquivos do Azure:  
+Configura um compartilhamento de arquivos de rede altamente disponível  similar ao compartilhamento local de arquivos utilizados em servidores FILE SERVE on premisse.  
+
+Tabelas do Azure:  
+Fornece uma opção de chave/atributos para o armazenamento de dados estruturados não relacionais com um  design sem esquemas.  
+
+Camadas de acesso de armazenamento do Azure:  
+Frequente: Otimizada para armazenamento de dados acessados com frequencia.  
+Esporádico:  
+Otimizada para armazenamento de dados acessados com pouca frequência e armazenados por pelo menos 30 dias.  
+Frio:  
+Otimizado para o armazenamento de dados acessados com pouca frequência e armazenados por pelo menos 90 dias.  
+
+Arquivo Morto:  
+Otimizada para o armazenamento de dados acessados raramente e armazenados por pelo menos 180 dias com requisitos de latência flexíveis.  
+Migração para o Azure 
+
+Azure Data Box:  
+Serviço utilizado para realizar a migração de dados de servidores on premiss para o servidor da microsoft  
+Realizando a transferência de até 80 TB de dados.  
+Protegendo os dados em caixa robusta durante ao transito para os servidores da Microsoft. 
+O Azure DATA BOX e indicados para os cenários onde existe conectividade limitada ou não existe conectividade, migração de dados de locais remotos , complices da empressa contratante ou regulatórias.   
+
+Az Copy: 
+Utilitário de linha de comando.  
+Copiar blobs ou arquivos de ou para sua conta de armazenamento.  
+A sincronização é realizada somente em uma direção.  
+
+Gerenciador de Arquivos do Azure: 
+Interface gráfica do usuário ( de modo semelhante ao Windows Explorer) 
+Compatível com windows,macos e linux  
+Obs: utiliza por trás da interface gráfica comando do Az copy, indica para pessoas que prefira não utilizar linha de comando para realizar essas tarefas de migração.  
+
+Gerenciamento de arquivos:  
+Sincroniza os arquivos do Azure e locais de forma bidirecional.  
+A camada de nuvem mantém os arquivos acessado com frequência no local enquanto libera espaço.  
