@@ -263,7 +263,7 @@ Gerenciamento de arquivos:
 Sincroniza os arquivos do Azure e locais de forma bidirecional.  
 A camada de nuvem mantém os arquivos acessado com frequência no local enquanto libera espaço.  
 
-#Identidade, Acesso e Segurança 
+# Identidade, Acesso e Segurança 
 
 Microsoft Entra ID e Domain Service (antigo AD):  
 Serviço de diretório onde podemos definir logins de recursos de nuvem e também para aplicativos criados 
