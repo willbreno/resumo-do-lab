@@ -262,3 +262,54 @@ Obs: utiliza por trás da interface gráfica comando do Az copy, indica para pes
 Gerenciamento de arquivos:  
 Sincroniza os arquivos do Azure e locais de forma bidirecional.  
 A camada de nuvem mantém os arquivos acessado com frequência no local enquanto libera espaço.  
+
+#Identidade, Acesso e Segurança 
+
+Microsoft Entra ID e Domain Service (antigo AD):  
+Serviço de diretório onde podemos definir logins de recursos de nuvem e também para aplicativos criados 
+Autenticação.  
+Logon único 
+Gerenciamento de aplicativos 
+Negócios para negócios (B2B) 
+Gerenciamento de dispositivos.   
+
+Microsoft Entra domain services:  
+Obtenha os benefícios dos serviços de domínio baseados em nuvem sem gerenciar os controladores de domínio.
+Execute aplicativos herdados ( que não podem utilizar os padroes de autenticação modernos ) 
+Sincronizar automaticamente a partir do Microsoft entra ID 
+
+Autenticação:  
+Identifica a pessoa ou serviço buscando acesso a um recurso.  
+Solicita credenciais  
+Base para criar principios de identidade e controle de acesso seguros.  
+
+Autorização:  
+Determina o nível de acesso de uma pessoa ou serviço autenticado.  
+Define quais dados eles podem acessar e o que podem fazer com eles.  
+Autentificação multi fatores (MFA)  
+Para realizar o login na conta onde exige MFA e preciso confirma em outro dispositivos para conseguir acesso a conta em um dispositivo isso devido a premissa que não só porque está utilizando usuário e senha, você seja a pessoa destinada a acessar.  
+
+Acesso condicional:  
+É um recurso para do Microsoft entra ID para aprovar ou negar acesso a determinados recursos:  
+Associação de usuário ou grupo.  
+Local do IP  
+Dispositivo 
+Aplicativo 
+Detecção de risco.   
+
+Controle de acesso baseado em função (Role-Based Access Control): 
+O RBAC (Role-Based Access Control) no Microsoft Azure é um sistema de gerenciamento de permissões que permite atribuir diferentes níveis de acesso a usuários e grupos com base em suas funções dentro da organização. Esse mecanismo ajuda a garantir que os usuários só tenham as permissões mínimas necessárias para realizar suas tarefas, melhorando a segurança e a eficiência na administração dos recursos na nuvem. 
+Gerenciamento de acesso de granularidade fina. 
+Divida as tarefas dentro da  equipe e conceda somente a quantidade de acessos de que os usuários precisam para trabalhar.  
+Habilite o acesso ao portal do Azure e o controle de acesso aos recursos.  
+
+Confiança Zero (Zero Trust): 
+baseia-se no princípio de que nenhuma entidade, seja interna ou externa, deve ser considerada completamente confiável. O pressuposto é que sempre há a possibilidade de uma violação de segurança. 
+Por isso, é essencial adotar uma abordagem de segurança em camadas, adicionando proteções adicionais em cada ponto do sistema. Além disso, os acessos devem ser sempre limitados ao mínimo necessário, garantindo que os usuários e sistemas só tenham permissões estritamente essenciais. A confiança deve ser continuamente validada, partindo do princípio de que algo pode ser comprometido a qualquer momento. 
+Defender cloud ( é uma aplicação cloud nativer ( nascido para cloud)) fornecendo proteção contra ameaças no azure e servidores local
+
+Seus principais pontos são:  
+Fornece recomendações de segurança.  
+Detectar e bloquear malware.  
+Analisar e identificar ataques potenciais.  
+Controle de acesso just-in-time para portas  
