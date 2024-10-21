@@ -377,4 +377,29 @@ Podemos criar uma policy para que somente possa ser gerado recursos que tiver ta
 Também podemos fazer que o recurso ao ser criado e não tiver uma tags herde a tag do grupo de recursos.  
 
  
+# Governança e conformidade 
 
+Azure Policy:  
+Ajuda a impor padrões organizacionais e a avaliar a conformidade em escala.  
+Ele fornece  governança e consistência  de recursos com  conformidade regulatória, segurança , custo e gerenciamento  
+Avalia e identifica os recursos do Azure que não atendem ás suas políticas.  
+Fornece definições de políticas e iniciativas integradas, em categorias como armazenamento, rede, computação, central de segurança e monitoramento.  
+Não complice(Non-compliant)  
+Políticas do azure que não estão em conformidade.  
+Remediação(remediation):  
+Políticas que quando estão em desacordo com a conformidade executa algum tipo de acesso.  
+Compliance(compliant)  
+Quando todos os recurso da políticas do azure estão em conformidade   
+Bloqueios de recursos.  
+Proteger os recursos do azure de exclusão ou modificação acidental. 
+Gerenciar bloqueios na assinatura, grupo de recursos ou níveis de recursos individuais dentro do portal do Azure.  
+
+Portal de confiança do serviço:  
+O Portal de Confiança do Serviço (Service Trust Portal) do Azure é uma plataforma que fornece informações detalhadas sobre como a Microsoft protege os dados e mantém a privacidade dos usuários em seus serviços de nuvem, como o Azure. Ele oferece acesso a uma variedade de documentos, incluindo relatórios de conformidade, auditorias e práticas de segurança. Através do portal, os clientes podem revisar as certificações de conformidade, além de obter informações sobre a segurança e os controles de privacidade implementados pela Microsoft. 
+Este portal é um recurso importante para ajudar empresas a garantir que os serviços que utilizam atendem aos requisitos regulatórios e de segurança. 
+
+Microsoft Purview  
+O Microsoft Purview é uma família de soluções de governança, risco e conformidade de dados que ajuda você a obter uma única exibição unificada em seus dados. O Microsoft Purview reúne insights sobre seus dados locais, miltinuvem e de software como serviço   
+Descobertas de dados automatizada  
+Classificação de dados confidencias  
+Linhagem de dados de ponta a ponta  
