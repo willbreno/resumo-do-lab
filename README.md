@@ -313,3 +313,68 @@ Fornece recomendações de segurança.
 Detectar e bloquear malware.  
 Analisar e identificar ataques potenciais.  
 Controle de acesso just-in-time para portas  
+
+
+
+# Gerenciamento de custo AZURE
+
+Computação em nuvem: domínio do objetivo.  
+Quais são os fatores que afetam o preços do azure ?  
+
+Tipo de recurso:  
+Os custos são especificos do recurso, portanto o uso que medidor rastreia e o número de medidores associados a um recurso, dependendo do tipo de recurso.  
+
+Consumo:  
+O contratante de serviço da nuvem somente vai pagar conforme o recurso que está utilizando.  
+
+Modelo de reserva:  
+Um modelo de custo mais barato, pois o contratante vai se comprometer que utilizara o serviços de cloud da Microsoft por um longo período de teste  
+
+Manutenção:  
+Monitorar ambiente do azure e manter seu ambiente pode ajudá-lo a indentificar e reduzir os custos que não são necessários, como o desligamento de máquinas virtuais subutilizadas.  
+
+Area Geografica:  
+O mesmo tipo de recurso pode custar valores diferentes dependendo da área geografica o que afeta os custos do Azure. 
+
+Trafego de rede:  
+Embora algumas transferência de dados de entradas sejam gratuitas o custo para dados de saída ou dados entre recursos do Azure é afetado por zonas de cobrança.  
+
+Assinaturas:  
+O tipo e a configuração da assinatura também podem afetar o custo. Por exemplo, a avaliação gratuita permite explorar alguns recursos do azure 
+
+Azure Marketplace:  
+Permite que os clientes encontrem e experimentem comprem e provisionem aplicativos e serviços de centenas de provedores de serviços líderes que são todos certificados pelo Azure  
+Quando adicionarmos recurso não nativos do Azure devemos procurar o suporte com o fornecedor do serviço ou recurso.  
+
+Calculadora de Preços Azure:  
+Este recurso pode dar uma base de qual sera o custo mensal do recurso que deseja implantar, porém pode variar, dados que precisam ser fornecidos para realizar o cálculo:  
+Região  
+Camada  
+Opção de cobrança  
+Opção de suporte  
+Programas e ofertas  
+Preço de Desenvolvimento/Teste  
+Calculadora de custo total de propriedade (TCO ): 
+Uma ferramenta para estimar a economia de custo possível ao migrar para o Azure.  
+Um relatório compara os custos das infraestruturas locais com os custos de uso de produtos e serviços do azure na nuvem.   
+
+Monitoramento de Custo:  
+È importante manter um monitoramento de custo no azure, para verificar se alguma configuração errada nos serviços e mostra uma previsão de custo, podendo usaro o serviço para gerar  
+Relatório de cobrança  
+Enriquecimento de dados  
+Assim podendo ter as seguintes vantagens:  
+Orçamento: Definir um orçamento de gastos  
+Alertas: Quando o custo exceder os limites 
+Recomendação: Recomendação de custos.   
+
+Marcas/Tags:  
+As marcas ou tags do Azure não e um recurso obrigatório, porém ajuda a oferecer, porem a utilização delas ajudam a verificar preços de recursos e identificar recurso, e também as tags não pode ser herdadas: 
+Metadados aos recursos do Azure.  
+Organizam os recursos em uma taxonomia de maneira lógica.  
+Consistem em um par nome-valor.  
+Muito uteis para reunir informações de cobrança.  
+Podemos criar uma policy para que somente possa ser gerado recursos que tiver tags.  
+Também podemos fazer que o recurso ao ser criado e não tiver uma tags herde a tag do grupo de recursos.  
+
+ 
+
