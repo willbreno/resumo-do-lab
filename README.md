@@ -438,3 +438,28 @@ Código exportavel
 
 Bicep:  
 Linguagem de programação microsoft azure para automatização de  criação e gerenciamento de recursos  
+
+# Ferramentas de monitoramento 
+
+Assistente do Azure:  
+O assistente do Azure analisa recursos implantados do Azure e faz recomendações com base nas práticas recomendadas para otimizar as implantações do Azure.  
+Confiabilidade  
+Segurança  
+Desempenho  
+Custo  
+Excelência operacional  
+
+Integridade do serviço do Azure 
+A integridade do serviço do Azure é uma coleção de serviços que mantem você informado sobre o status geral do Azure, status de serviços que podem afetar você e o status de recurso especifico que está afetando você  
+
+Status do Azure:  
+Visão global da integridade de todos os serviços do Azure em todas as regiões do Azure  
+
+Integridade do Serviço:  
+Exibição focada apenas nos serviços e regiões que você está usando. Se um Serviço estiver enfrentando um problema em uma região que você não está usando, ele não aparecerá aqui 
+
+Resource Health:  
+Exibição personalizada dos recursos do Azure. Ele fornece informações sobre a integridade de seus recursos de nuvem individuais.  
+
+Azure monitor:  
+O Azure monitor maximiza a disponibilidade e o desempenho de aplicativos e serviços coletando, analisando e tomando  decisões com base na telemetria da nuvem e de ambientes locais  
