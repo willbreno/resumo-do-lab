@@ -403,3 +403,38 @@ O Microsoft Purview é uma família de soluções de governança, risco e confor
 Descobertas de dados automatizada  
 Classificação de dados confidencias  
 Linhagem de dados de ponta a ponta  
+
+# Ferramentas de implantação de recurso 
+
+Ferramentas para interagir com o Azure.  
+Portal Azure. 
+Azure Cloud Shell  
+Azure PowerShell  
+Interface de Linha de Comando CLI  
+
+Azure ARC: 
+Fermente de gerenciamento de recurso fora do Azure ( multi cloud )onde pode ser configruado ewm ambiente local(on  premiss,  várias nuvens e bordas ) 
+ As nuvens permitidas externas permitidas para o gerenciamento são a AWS e GPC 
+
+Permitindo assim:  
+Painel único de gerenciamento  
+Controle de acesso baseado em função  
+Praticas nativas de nuvem  
+Segurança e conformidade 
+Infraestrutura como código: 
+Garante consistência na implantação em todo o ecossistema de nuvem. 
+Gerencie a configuração em escala.  
+Provisione rapidamente ambientes adicionais com base em uma configuração e um build padrão.  
+
+Modelos do ARM: 
+Os modelos do ARM (Azure Resource Manager) são arquivos JSON (JAVASCRIPT OBEJECT NOTATION) que podem ser usados para cirar e implantar a infraestrutura do azure sem a necessidade a necessidade de escrever comandos de programação.  
+Requisito dos modelos ARM 
+Sintaxe declarativa  
+Resultados repetíveis  
+Orquestração  
+Arquivos modulares  
+Validação integrada 
+Código exportavel   
+
+Bicep:  
+Linguagem de programação microsoft azure para automatização de  criação e gerenciamento de recursos  
